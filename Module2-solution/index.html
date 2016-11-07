@@ -1,120 +1,162 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Module 2 - solution</title>
+<title>Our Menu</title>
 <style>
-	
-	/********** Base styles **********/
+
+/********** Base styles **********/
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-body {
-  font-family: Arial, serif;
-}
-
 h1 {
-  margin-bottom: 40px;
-  font-size: 175%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+#box1 {
+  background-color: grey;
+  border: 1px solid black;
+  height: 150px;
+  overflow: visible;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left:5px;
+  margin-right:5px;
+  margin-top: 5px;
+}
+#box2 {
+  background-color: grey;
+  border: 1px solid black;
+  height: 150px;
+  overflow: visible;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left:5px;
+  margin-right:5px;
+  margin-top: 5px;
+}
+#box3 {
+  background-color: grey;
+  border: 1px solid black;
+  height: 150px;
+  overflow: visible;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left:5px;
+  margin-right:5px;
+  margin-top: 5px;
+}
+#p1 {
+  border: 1px solid black;
+  background-color: pink;
+  width: 30%;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: Georgia, serif;
+  color: black;
+  font-weight: bold;
   text-align: center;
 }
-p {
-
+#p2 {
+  border: 1px solid black;
+  background-color: red;
+  width: 30%;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: Georgia, serif;
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }
+#p3 {
+  border: 1px solid black;
+  background-color: yellow;
+  width: 30%;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: Georgia, serif;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+ p {
+  font-family: Georgia, serif;
+  color: black;
+  font-weight: 200;
+  text-align: left;
+  padding: 30px 10px 10px 10px;
+ }
+  
 /* Simple Responsive Framework. */
+.container{
+  padding: 10px;
+  margin: 10px;
+} 
 .row {
   width: 100%;
 }
 
-.row > div {
-  border: 1px solid black;
-  background-color: grey;
-  color: #fff; 
-  padding: 1%;
-  padding-top: 40px;
-  margin: 1%;
-  position: relative;
-}
-
-.row > div > span {
-  border: 1px solid #000;
-  color: #000;
-  font-weight: bold;
-  font-size: 125%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40%;
-  text-align: center;
-}
-
-.pink {
-  background-color: pink;
-}
-
-.lightgreen {
-  background-color: lightgreen;
-}
-
-.lightblue {
-  background-color: lightblue;
-}
-
 /********** Large devices only **********/
 @media (min-width: 992px) {
-  .col-lg-4 {
-    width: 31.3%;
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;   
   }
+  .col-lg-3 {
+    width: 25%;
+      }
+  
 }
+
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-6, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
-  }
+ }
+  #box1 {
+width:45%;
+}
+  #box2 {
+ width:45%;
+}
+  #box3 {
+  width:90%;
+}
+
   .col-md-6 {
-    width: 47%;
+    width: 45%;
   }
-
-  .col-md-12 {
-    width: 96%;
-  }
+  
 }
 
-/********** Small devices only **********/
-@media (max-width: 767px) {
-  .col-sm-12 {
-    width: 96%;
-    float: left;
-    border: 1px solid green;    
-  }
-}
-
-</style>>
+</style>
 </head>
-
 <body>
 
-<h1>Our menu</h1>
-
+<h1>Our Menu</h1>
+<div class="container">
 <div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-12">
-  <span class="pink">Chicken</span>
-  lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
-  <div class="col-lg-4 col-md-6 col-sm-12">
-  <span class="lightgreen">Beef</span>
-  lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
-  <div class="col-lg-4 col-md-12 col-sm-12">
-  <span class="lightblue">Sushi</span>
-  lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+  <div id="box1" class="col-lg-3 col-md-6"><div id="p1">Chicken</div>
+  <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sfficiis quae facilis, nisi, ex similique. Animi, perferendis. </p></div>
+  
+    <div id="box2" class="col-lg-3 col-md-6"><div id="p2">Beef</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisiacilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. </p></div>
+
+  <div id="box3" class="col-lg-3 col-md-6"><div id="p3">Sushi</div>
+  <p>Lorem ipsum dolor sit asi, ex similique. Animi, perferendis. </p></div>
+
+
 </div>
-
+</div>
 </body>
-
 </html>
 
